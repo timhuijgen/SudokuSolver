@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    #puzzle {
+        width: calc(80px * 9);
+        overflow: hidden;
+    }
+
+    .field {
+        width: 80px;
+        height: 80px;
+        float: left;
+        border: solid 1px #8e8e8e;
+        position: relative;
+    }
+
+    .value {
+        position: absolute;
+        left: 31px;
+        top: 21px;
+        background-color: transparent;
+        font-size: 32px;
+        color: inherit;
+    }
+
+
+</style>
+
+<div id="puzzle"></div>
+
+<script src="dist/bundle.js"></script>
+</body>
+</html>
